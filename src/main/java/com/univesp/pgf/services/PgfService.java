@@ -6,11 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sun.tools.javac.comp.Pgf;
 import com.univesp.pgf.domain.Pgf;
 import com.univesp.pgf.repositories.PgfRepository;
-
-import javassist.tools.rmi.ObjectNotFoundException;
+import com.univesp.pgf.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class PgfService {

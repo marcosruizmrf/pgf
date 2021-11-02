@@ -1,11 +1,5 @@
 package com.univesp.pgf.resources;
 
-public class PgfResource {
-
-}
-
-package com.univesp.pgf.resources;
-
 import java.net.URI;
 import java.util.List;
 
@@ -69,7 +63,7 @@ public class PgfResource {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
-     
+
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<Pgf> update(@PathVariable Integer id, @RequestBody Pgf obj) {
 		Pgf newObj = service.update(id, obj);
